@@ -7,20 +7,21 @@
 
 namespace ns3 {
 
-class Ipv4CongaRoutingHelper : public Ipv4RoutingHelper
-{
+class Ipv4CongaRoutingHelper : public Ipv4RoutingHelper {
 public:
-  Ipv4CongaRoutingHelper ();
-  Ipv4CongaRoutingHelper (const Ipv4CongaRoutingHelper&);
-  
-  Ipv4CongaRoutingHelper* Copy (void) const;
-  
-  virtual Ptr<Ipv4RoutingProtocol> Create (Ptr<Node> node) const;
+  // emtpy constructor
+  Ipv4CongaRoutingHelper();
 
-  Ptr<Ipv4CongaRouting> GetCongaRouting (Ptr<Ipv4> ipv4) const;
+  // copy constructor
+  Ipv4CongaRoutingHelper(const Ipv4CongaRoutingHelper&);
+
+  Ipv4CongaRoutingHelper* Copy(void) const;
+
+  virtual Ptr<Ipv4RoutingProtocol> Create(Ptr<Node> node) const;
+
+  Ptr<Ipv4CongaRouting> GetCongaRouting(Ptr<Ipv4> ipv4) const;
 };
 
 }
 
-#endif /* IPV4_CONGA_ROUTING_HELPER_H */
-
+#endif
