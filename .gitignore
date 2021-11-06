@@ -21,6 +21,8 @@ seventh-packet-byte-count.png
 \#*#
 ~*
 
+.DS_Store
+
 testpy-output
 
 bindings/python/pybindgen/

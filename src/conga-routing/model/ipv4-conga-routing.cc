@@ -17,7 +17,6 @@ namespace ns3 {
 NS_LOG_COMPONENT_DEFINE("Ipv4CongaRouting");
 NS_OBJECT_ENSURE_REGISTERED(Ipv4CongaRouting);
 
-// constructor
 Ipv4CongaRouting::Ipv4CongaRouting() : m_isLeaf(false),
                                        m_leafId(0),
                                        m_tdre(MicroSeconds(200)),
@@ -35,7 +34,6 @@ Ipv4CongaRouting::Ipv4CongaRouting() : m_isLeaf(false),
   NS_LOG_FUNCTION(this);
 }
 
-// destructor
 Ipv4CongaRouting::~Ipv4CongaRouting() {
   NS_LOG_FUNCTION(this);
 }

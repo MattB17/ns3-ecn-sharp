@@ -9,10 +9,8 @@ namespace ns3 {
 
 class Ipv4CongaRoutingHelper : public Ipv4RoutingHelper {
 public:
-  // emtpy constructor
   Ipv4CongaRoutingHelper();
 
-  // copy constructor
   Ipv4CongaRoutingHelper(const Ipv4CongaRoutingHelper&);
 
   Ipv4CongaRoutingHelper* Copy(void) const;
